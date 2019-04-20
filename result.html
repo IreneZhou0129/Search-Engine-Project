@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Search Engine Project Result</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	</head>
+	<style>
+		body{ background-image: url("../static/images/bg01.jpg");}
+		h4{ color:whitesmoke}
+		.is-preload{
+			max-width: 500px;
+			margin: auto;
+		}
+	</style>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Results</h1>
+			</header>
+        <!-- Results -->
+        {% for document in ranked_doc %}
+            <h3>
+                {{document.get('name')}}
+                <a href="{{url_for('document',code=document.get('docID'))}}"><br>
+                    <button onClick='redirect(document)' >readMore </button>
+                </a>
+            </h3>
+        {% endfor %}
+	</body>
+</html>

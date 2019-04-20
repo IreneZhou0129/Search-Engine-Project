@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Search Engine Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	</head>
+	<style>
+		body{ background-image: url("../static/images/bg01.jpg");}
+		.is-preload{
+			max-width: 500px;
+			margin: auto;
+		}
+	</style>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Searching Here </h1>
+				<h4> Current Collection: uOttawa CSI courses</h4>
+			</header>
+
+		<!-- Search Form -->
+			<form id="signup-form" method="post" action="/result">
+				<input type="text" name="search-bar" placeholder="Search.."><br>
+				
+				<input type="radio" name="module" value="boolean"> Boolean<br>
+				<input type="radio" name="module" value="vsm"> VSM<br>
+
+				<input name='search-button'  type='submit' value='search' /><br>
+			</form>
+			
+	</body>
+</html>

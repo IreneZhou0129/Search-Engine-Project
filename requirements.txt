@@ -1,0 +1,7 @@
+flask
+numpy
+nltk
+scikit-learn
+beautifulsoup4
+pythonds
+simplejson
